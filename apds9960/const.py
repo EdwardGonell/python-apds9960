@@ -131,7 +131,7 @@ APDS9960_GWTIME_30_8MS = 6
 APDS9960_GWTIME_39_2MS = 7
 
 # Default values
-APDS9960_DEFAULT_ATIME = 219                            # 103ms
+APDS9960_DEFAULT_ATIME = 219                            # Integration Time = 2.78ms * (256 - ATIME)
 APDS9960_DEFAULT_WTIME = 246                            # 27ms
 APDS9960_DEFAULT_PROX_PPULSE = 0x87                     # 16us, 8 pulses
 APDS9960_DEFAULT_GESTURE_PPULSE = 0x89                  # 16us, 10 pulses
@@ -139,8 +139,8 @@ APDS9960_DEFAULT_POFFSET_UR = 0                         # 0 offset
 APDS9960_DEFAULT_POFFSET_DL = 0                         # 0 offset
 APDS9960_DEFAULT_CONFIG1 = 0x60                         # No 12x wait (WTIME) factor
 APDS9960_DEFAULT_LDRIVE = APDS9960_LED_DRIVE_100MA
-APDS9960_DEFAULT_PGAIN = APDS9960_PGAIN_4X
-APDS9960_DEFAULT_AGAIN = APDS9960_AGAIN_4X
+APDS9960_DEFAULT_PGAIN = APDS9960_PGAIN_4X              # 1X, 2X, 4X, 8X
+APDS9960_DEFAULT_AGAIN = APDS9960_AGAIN_4X              # 1X, 4X, 16X, 64X
 APDS9960_DEFAULT_PILT = 0                               # Low proximity threshold
 APDS9960_DEFAULT_PIHT = 50                              # High proximity threshold
 APDS9960_DEFAULT_AILT = 0xffff                          # Force interrupt for calibration
